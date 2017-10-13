@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 
 class HelloWorld extends React.Component {
@@ -32,7 +32,7 @@ class HelloWorld extends React.Component {
             <div>
                 <h1>Hello, world by Denglt!</h1>
                 <input type="button" value={this.state.num} onClick={this.addNum.bind(this)}></input>
-                <input type="button" value={this.state.num} onClick={this.addNum2.bint(this)}></input>
+                <input type="button" value={this.state.num} onClick={this.addNum2.bind(this)}/>
                 <input type="button" value={this.num} onClick={this.addNum3.bind(this)}></input>
             </div>
         );

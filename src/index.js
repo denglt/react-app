@@ -15,8 +15,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<HelloWorld  />, document.getElementById('hello'));
 ReactDOM.render(<HelloWorld  />, document.getElementById('hello2'));
 
-ReactDOM.render( <RepoList promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>,
-          document.getElementById('repolist'));
+ReactDOM.render( <RepoList promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>, document.getElementById('repolist'));
 
 
 //ReactDOM.render( <TraceComponentStat/> ,document.getElementById('hello') );
