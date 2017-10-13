@@ -1,3 +1,4 @@
+// @flow
 var _createClass = function () {
     function defineProperties(target, props) {
         for (var i = 0; i < props.length; i++) {
@@ -15,3 +16,10 @@ var _createClass = function () {
         return Constructor;
     };
 }();
+
+function foo(x: ?number): string {
+	if (x) {
+		return x;
+	}
+	return "default string";
+}

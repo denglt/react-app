@@ -6,7 +6,7 @@ class HelloWorld extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.state = {num: 1};
-        this.num = 1;
+        this.num = 2;
     }
 
     addNum() {
