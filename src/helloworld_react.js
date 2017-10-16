@@ -1,5 +1,13 @@
 import React from "react";
 
+var myStyle = {
+    fontSize: 50,
+    color: '#FF0000'
+};
+var arr = [
+    <h1>菜鸟教程</h1>,
+    <h2>学的不仅是技术，更是梦想！</h2>,
+];
 
 class HelloWorld extends React.Component {
 
@@ -29,11 +37,14 @@ class HelloWorld extends React.Component {
     render() {
 
         return (
+            /*注释 */
             <div>
-                <h1>Hello, world by Denglt!</h1>
+                <h1 style = {myStyle} >Hello, world by Denglt!</h1>
+                {/*注释...*/}
                 <input type="button" value={this.state.num} onClick={this.addNum.bind(this)}></input>
                 <input type="button" value={this.state.num} onClick={this.addNum2.bind(this)}/>
                 <input type="button" value={this.num} onClick={this.addNum3.bind(this)}></input>
+                <div>{arr}</div>
             </div>
         );
     }

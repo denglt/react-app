@@ -15,12 +15,15 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<HelloWorld  />, document.getElementById('hello'));
 ReactDOM.render(<HelloWorld  />, document.getElementById('hello2'));
 
-ReactDOM.render( <RepoList promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>, document.getElementById('repolist'));
+//ReactDOM.render( <RepoList promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>, document.getElementById('repolist'));
 
 
 //ReactDOM.render( <TraceComponentStat/> ,document.getElementById('hello') );
 
 //var promise = $.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars');
 //promise.then( value => alert(value) , error => alert(error) );
+
+var myDivElement = <div className="foo" > <h1>author is denglt</h1> </div>;
+ReactDOM.render(myDivElement, document.getElementById("tail")); //直接渲染HTML的标签
 
 registerServiceWorker();
