@@ -16,6 +16,7 @@ class App extends Component {
 				<div id="hello"></div>
 				<div id="hello2"></div>
 				<div id="repolist"></div>
+				<div id="webSite"></div>
 				<div id="tail" />
 			</div>
 		);

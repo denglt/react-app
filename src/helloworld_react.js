@@ -44,6 +44,7 @@ class HelloWorld extends React.Component {
                 <input type="button" value={this.state.num} onClick={this.addNum.bind(this)}></input>
                 <input type="button" value={this.state.num} onClick={this.addNum2.bind(this)}/>
                 <input type="button" value={this.num} onClick={this.addNum3.bind(this)}></input>
+                <input type="button" value={this.props.htmlFor} ></input>
                 <div>{arr}</div>
             </div>
         );
