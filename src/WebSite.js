@@ -20,11 +20,17 @@ class WebSite extends React.Component {
     componentDidUpdate(){ }
     componentWillUnmount(){ }
 
+	children() {
+		//alert(React.Children.count(this));
+	}
+
     render(){
+        alert("WebSite render");
         return (
             <div>
 			    <Name name={this.props.name}/>
 			    <Link site={this.props.site} />
+                <input type="button" value="children" onClick={this.children.bind(this)}/>
 		    </div>
         );
     }
@@ -71,6 +77,8 @@ class Link extends React.Component {
 
         this.state = {
         };
+
+        this.site = this.props.site;
     }
 
     componentWillMount(){ }
@@ -81,11 +89,21 @@ class Link extends React.Component {
     componentDidUpdate(){ }
     componentWillUnmount(){ }
 
+	handleChange(event){
+    	//alert("handleChange");
+    	this.site = event.target.value;
+    	alert(this.site)
+    	this.forceUpdate();
+	}
+
     render(){
         return (
-        	<a href={this.props.site}>
-				{this.props.site}
-			</a>
+			<div>
+				<a href={this.site}>
+					{this.site}
+				</a>
+				<input type="text" value={this.props.site} onChange={this.handleChange.bind(this)}/>
+			</div>
 		);
     }
 }

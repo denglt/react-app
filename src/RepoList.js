@@ -13,7 +13,6 @@ class RepoList extends React.Component {
     }
 
 
-
     componentDidMount() {
         //console.log("componentDidMount")
         this.props.promise.then(
