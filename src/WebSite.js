@@ -12,6 +12,7 @@ class WebSite extends React.Component {
         };
     }
 
+
     componentWillMount(){ }
     componentDidMount() { }
     componentWillReceiveProps(nextProps) { }
@@ -19,6 +20,8 @@ class WebSite extends React.Component {
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(){ }
     componentWillUnmount(){ }
+
+
 
 	children() {
 		//alert(React.Children.count(this));
@@ -74,7 +77,6 @@ class Link extends React.Component {
 
     constructor(props, context) {
         super(props, context);
-
         this.state = {
         };
 
@@ -88,6 +90,7 @@ class Link extends React.Component {
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(){ }
     componentWillUnmount(){ }
+
 
 	handleChange(event){
     	//alert("handleChange");
@@ -110,5 +113,7 @@ class Link extends React.Component {
 
 Link.propTypes = {};
 Link.defaultProps = {};
+Link.contextTypes = {};
+Link.childContextTypes = {};
 
 export default WebSite;

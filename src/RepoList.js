@@ -45,4 +45,4 @@ class RepoList extends React.Component {
         }
     }
 }
-export default RepoList
+export default RepoList;
