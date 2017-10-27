@@ -9,6 +9,7 @@ class RepoList extends React.Component {
             loading: true,
             error: null,
             data: null
+
         };
     }
 
