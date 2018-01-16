@@ -30,6 +30,7 @@ ReactDOM.render(<WebSite name="Oracle监控" site="http://fortify.iask.in/"/>,
 	(obj) => {
 		//alert(obj == undefined);
 		alert("WebSite callback");
+		alert("hello world");
 	});
 
 var myDivElement = <div className="foo"><h1>author is denglt</h1></div>;
